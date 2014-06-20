@@ -1,6 +1,7 @@
 var Hapi = require('hapi');
 var redis = require("redis");
 var async = require('async');
+var url = require('url');
 
 var redisClient;
 if (process.env.REDISCLOUD_URL != undefined) {
