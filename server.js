@@ -1,6 +1,5 @@
 var Hapi = require('hapi');
 var redis = require("redis");
-var async = require('async');
 var url = require('url');
 
 var redisClient;
@@ -35,6 +34,7 @@ server.route({
     path: '/',
     config: {
         handler: function (request, reply) {
+            redisClient.hincrby('stats:page_requests', request.route.path, 1);
             reply.view('index.html');
         }
     }
@@ -76,9 +76,6 @@ server.route({
     }
 });
 
-
 server.start(function () {
     console.log("API server started on port: ", server.info.port);
 });
-
-
