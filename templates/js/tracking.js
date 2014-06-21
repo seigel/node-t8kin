@@ -1,4 +1,3 @@
-mixpanel.track('pageload');
 mixpanel.track_links("nav a", "click nav link", {
     "referrer": document.referrer
 });
