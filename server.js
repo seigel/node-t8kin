@@ -36,7 +36,7 @@ server.route({
         handler: function (request, reply) {
             redisClient.hincrby('stats:page_requests', request.route.path, 1);
             redisClient.hget('stats:page_requests', request.route.path, function (err, result) {
-                console.log('result:', result, err);
+                if (err) console.log('result:', result, err);
                 reply.view('index.html', {count: result});
             });
         }
