@@ -11,3 +11,47 @@
     border-radius: 6px;
     box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
+
+#intro {
+    background: url(/i/home.jpg) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+}
+#home {
+    background: url(/i/bg-green.jpg) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 200px 0;
+}
+#about {
+    background: url(/i/about.png) 50% 0 fixed;
+    height: auto;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 100px 0;
+    color: #ffffff;
+}
+#contact {
+    height: 100px;
+    width: 100%;
+    box-shadow: 0 0 50px rgba(0,0,0,0.8);
+    padding: 20px 0;
+
+}
+
+.media-object { width: 64px; height: 64px; padding-bottom: 30px }
+
+.row [class*="well"] {
+    margin-left:2.564102564102564%;
+    width: 330px;
+    height: 280px;
+}
